@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Malarianet</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    /* Style for the video element */
+    #backgroundVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1; /* Place the video behind other content */
+      background-size: cover; /* Cover the entire viewport */
+      overflow: hidden; /* Hide any overflowing video content */
+    }
+
+    /* Style for the content */
+    .content {
+      margin-top: 100px; /* Adjust as needed to avoid overlapping with the header */
+      color: black; /* Change text color to a more visible color */
+      background-color: rgba(255, 255, 255, 0.8); /* Apply a semi-transparent background */
+      padding: 20px;
+      border-radius: 10px; /* Add rounded corners */
+    }
+
+    /* Style for the header */
+    .header {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+    }
+
+    /* Style for the footer */
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+    }
+
+    /* Style for links */
+    a {
+      color: #ffcc00; /* Set link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    a:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+
+    /* Style for list items */
+    ul {
+      list-style-type: none; /* Remove default list style */
+      padding: 0;
+    }
+
+    ul li {
+      margin: 10px 0; /* Add margin to list items */
+    }
+  </style>
+</head>
+<body>
+  <!-- Video element for the background -->
+  <video id="backgroundVideo" autoplay loop muted>
+    <source src="static/backgroundvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="header">
+    <h1>Contact Us</h1>
+  </div>
+
+  <div class="content">
+    <p>We would love to hear from you! Whether you have questions about our project, want to provide feedback, or are interested in collaboration, please reach out to us using the information below.</p>
+    
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="mailto:support@malarianet.com">support@malarianet.com</a></p>
+    <p>Phone: +123-456-7890</p>
+    <p>Address: Work Emerald Building, 7th Floor, Hitech-City, Hyderabad, India</p>
+
+    <h2>Follow Us</h2>
+    <p>Stay updated with our latest news and developments:</p>
+    <ul>
+      <li><a href="https://www.facebook.com/malarianet">Facebook</a></li>
+      <li><a href="https://www.twitter.com/malarianet">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/company/malarianet">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Malarianet. All rights reserved.</p>
+  </div>
+</body>
+</html>
+  

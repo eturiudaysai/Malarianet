@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Malarianet</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+   
+    #backgroundVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1; 
+      background-size: cover;
+      overflow: hidden; 
+    }
+    
+    .content {
+      margin-top: 100px; 
+      color: black; 
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px; 
+    }
+
+   
+    .header {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    }
+
+    
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Styling for team members */
+    .team-member {
+      margin-top: 20px; /* Adjust margin as needed */
+    }
+
+    .team-member h3 {
+      color: red; /* Red color for team member names */
+    }
+  </style>
+</head>
+<body>
+  
+  <video id="backgroundVideo" autoplay loop muted>
+    <source src="static/backgroundvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="header">
+    <h1>About Us</h1>
+  </div>
+
+  <div class="content">
+    <p>Welcome to Malarianet, a cutting-edge initiative aimed at revolutionizing malaria diagnosis and prevention through the power of artificial intelligence.</p>
+    
+    <h2>Our Mission</h2>
+    <p>Our mission is to harness the power of technology to combat malaria, one of the deadliest diseases affecting millions globally. By providing an accessible and reliable tool for early detection, we aim to reduce the mortality rate and improve the quality of life for those in malaria-prone regions.</p>
+
+    <h2>About the Project</h2>
+    <p>The Malarianet project leverages advanced machine learning algorithms to analyze microscopic images of blood samples. Our model is trained to detect the presence of malaria parasites with high accuracy. This technology allows for rapid and early diagnosis, which is crucial in the timely treatment and management of malaria.</p>
+
+    <h2>How It Helps People</h2>
+    <p>Malaria remains a major health challenge, particularly in developing countries with limited access to healthcare facilities. By providing a tool that can be easily used in local clinics or even remote areas, Malarianet empowers healthcare providers to:
+    </p>
+    <ul>
+      <li>Quickly diagnose malaria and start treatment promptly, reducing the risk of severe illness and death.</li>
+      <li>Monitor the effectiveness of treatment over time, ensuring patients receive the care they need.</li>
+      <li>Educate communities about malaria prevention and control measures, contributing to broader public health efforts.</li>
+    </ul>
+
+    <h2>Our Vision</h2>
+    <p>We envision a world where malaria is no longer a major public health threat. Through innovative solutions and partnerships, we aim to support global malaria eradication efforts and improve health outcomes for vulnerable populations.</p>
+
+    <h2>Contact Us</h2>
+    <p>We welcome feedback, collaboration opportunities, and inquiries. Please visit our <a href="/contact">Contact Us</a> page to get in touch with our team.</p>
+
+    <!-- Team Member Details -->
+    <div class="team-member">
+      <h3>Udaysai Eturi</h3>
+      <p>Phone: +123456789</p>
+      <p>Email: udaysai.eturi@gmail.com</p>
+    </div>
+
+    <div class="team-member">
+      <h3>Sampoorna Huparikar</h3>
+      <p>Phone: +987654321</p>
+      <p>Email: 245121737044@mvsrec.edu.in</p>
+    </div>
+
+    <div class="team-member">
+      <h3>Abhinay Reddy Maddi</h3>
+      <p>Phone: +444333222</p>
+      <p>Email: 245121737062@mvsrec.edu.in</p>
+    </div>
+    <!-- End of Team Member Details -->
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Malarianet. All rights reserved.</p>
+  </div>
+</body>
+</html>

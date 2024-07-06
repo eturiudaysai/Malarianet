@@ -1,0 +1,84 @@
+body {
+  background-image: url('test.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button, .nav-button, .predict-button, .file-upload {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px; 
+}
+
+
+button:hover, .nav-button:hover, .predict-button:hover, .file-upload:hover {
+  background-color: darkgreen;
+}
+
+.predict-button {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px; 
+  margin-top: 20px;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 3px; 
+  margin-top: 10px;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+
+.result-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.result {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.additional-info {
+  margin-top: 10px;
+}
+
+.additional-info h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.additional-info p {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
